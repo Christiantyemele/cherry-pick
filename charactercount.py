@@ -1,3 +1,4 @@
+import pprint
 message = 'it was a bright cold day in april, and the clocks were striking thirteen.'
 count = {}
 
@@ -6,4 +7,5 @@ for character in message:
 
     count[character] = count[character] + 1
 
-print(count)
+print(pprint.pformat(count))
+pprint.pprint(dict['a','fs',3,2,2])
