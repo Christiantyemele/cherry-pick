@@ -1,0 +1,12 @@
+  name: Github Actions Demo
+  run-name: ${{ github.actor }} is testing out github actions
+  on: pull_request
+  jobs:
+    # this is the name of the jobs to be run
+    Explore-Github-Actions:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo " the job was automatically triggered by a ${{ github.event }} event.
+        - name: check out repository code
+          uses: actions/checkout@v4
+        - run: echo " the ${{ github.repository }} "
